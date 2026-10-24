@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+::selection { background: #f5f22e; color: #171717; }
+.nav-link { position: relative; color: rgba(255,255,255,.68); transition: color .2s ease; }
+.nav-link:hover { color: #f5f22e; }
+.nav-link::after { position: absolute; bottom: -7px; left: 0; height: 1px; width: 0; background: #f5f22e; content: ''; transition: width .25s ease; }
+.nav-link:hover::after { width: 100%; }
+.hero-grid { background-image: radial-gradient(rgba(255,255,255,.15) .7px, transparent .7px); background-size: 16px 16px; }
+.eyebrow { display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+.eyebrow span { display: inline-block; width: 22px; height: 2px; background: #171717; }
+.section-heading { margin-top: 18px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(2.8rem, 6.5vw, 6rem); font-weight: 700; letter-spacing: -.075em; line-height: .9; }
+.highlight { background: #f5f22e; box-decoration-break: clone; -webkit-box-decoration-break: clone; padding: 0 .08em; }
+.project-card { min-width: 0; }
+html { scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

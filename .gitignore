@@ -1,0 +1,15 @@
+.DS_Store
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+
+# macOS files
+.DS_Store
+**/.DS_Store
+node_modules/
+dist/
+build/
+.DS_Store
+**/.DS_Store
